@@ -5,9 +5,9 @@ int pertence_fibonacci(int num) {
     while (a < num) {
         temp = a;
         a = b;
-        b = temp + b;  // Próximo número na sequência
+        b = temp + b;  
     }
-    return a == num;  // Retorna 1 se pertence, 0 se não
+    return a == num;  
 }
 
 int main() {

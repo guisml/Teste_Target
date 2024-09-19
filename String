@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int contar_letras_a(const char *str) {
+    int cont = 0;  
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == 'a' || str[i] == 'A') {
+            cont++;
+        }
+    }
+    return cont;
+}
+
+int main() {
+    
+    const char *texto = "A abacate é uma fruta saborosa.";
+    
+    int quantidade_a = contar_letras_a(texto);
+    
+    if (quantidade_a > 0) {
+        printf("A letra 'a' aparece %d vez(es) na string.\n", quantidade_a);
+    } else {
+        printf("A letra 'a' não aparece na string.\n");
+    }
+
+    return 0;
+}
